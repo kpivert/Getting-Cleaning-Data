@@ -1,7 +1,7 @@
 # Getting-Cleaning-Data
 ## Repo for Getting and Cleaning Data Course Project
 
-This repo contains the r script *run_analysis.R* and the associated code book *CodeBook.MD* that were used to create tidy dataset *tidyData.csv* of summary statistics (mean of time and frequency variables [means and SDs] by subject and activity) using activity tracking data from accelerometers from the Samsung Galaxy 5 (original dataset at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones):
+This repo contains the r script *run_analysis.R* and the associated code book *CodeBook.MD* that were used to create tidy dataset *tidyData.txt* of summary statistics (mean of time and frequency variables [means and SDs] by subject and activity) using activity tracking data from accelerometers from the Samsung Galaxy 5 (original dataset at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones):
 
 Per the researchers who conducted this study: *The data are from accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz.*
 

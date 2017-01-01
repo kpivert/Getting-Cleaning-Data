@@ -30,4 +30,4 @@ Extracted the activity names from the activity class labels in the dataset (acti
 
 ### Arrange into Tidy Data Set and Calculate Summary Statistics
 
-Created a tidy dataset (tidyData) by ordering by subject and activity. Using aggregate, calculated mean values for each measurement (means and sds)for each activity by each subject. Saved in separate dataset (tidyDataSummary) and saved as a CSV (tidyData.csv).
+Created a tidy dataset (tidyData) by ordering by subject and activity. Using aggregate, calculated mean values for each measurement (means and sds)for each activity by each subject. Saved in separate dataset (tidyDataSummary) and saved as a text file (tidyData.txt).
