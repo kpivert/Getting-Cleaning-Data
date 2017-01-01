@@ -136,6 +136,6 @@
           
     ## Export Tidied Dataset 
           
-          write.csv(tidyDataSummary, "/Users/kpivert/ExData_Plotting1/Getting-Cleaning-Data/tidyData.csv", row.names = FALSE)
+          write.table(tidyDataSummary, "/Users/kpivert/ExData_Plotting1/Getting-Cleaning-Data/tidyData.txt", row.names = FALSE)
           
         
