@@ -10,19 +10,24 @@ The data came from the following research paper:
 
 Downloaded zipped file with dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip.
 
-Both the train and test datasets included 3 files: captured data, activity, and subject. Respective datsets were combined together in two data frames (testData and trainData) before being combined into one single dataset: samsungData.
+Both the train and test datasets included 3 files: captured data, activity, and subject. Respective datsets were combined together in two data frames (testData and trainData) before being combined into one single dataset (samsungData).
 
 ### Identifying Variables of Interest and Subset
 
-Identified mean and SD variables (and thus column names) using grep for "mean" and "std". Isolated column numbers and column names and subsetted data (samsungMeanSD) and renamed columns using the following scheme:
+Using the features.txt file I identified mean and SD variables (and column names) using grep for "mean" and "std". Isolated column numbers and column names and subsetted data into new dataset (samsungMeanSD) and renamed columns using the following schema:
 
 * removed hyphens and parens
 * labeled time variables as "time"
 * labeled frequency variables as "freq"
-* added "mean" to mean variables and "sd" to standard devation variables
+* added "mean" to mean variables and "sd" to standard deviation variables
 
-
+Details on the measurements captured in the dataset are available from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 
 ### Providing Descriptive Activity Names
 
-Extracted the activity names from the activity class labels in the dataset. Assigned these names as labels (revised to lowercase with underscores removed) to the "activity" factor variable, and confirmed correct label-level assignment.
+Extracted the activity names from the activity class labels in the dataset (activity_labels.txt). Assigned these names as labels (revised to lowercase with underscores removed) to the "activity" factor variable, and confirmed correct label-level assignment.
+
+
+### Arrange into Tidy Data Set and Calculate Summary Statistics
+
+Created a tidy dataset (tidyData) by ordering by subject and activity. Using aggregate, calculated mean values for each measurement (means and sds)for each activity by each subject. Saved in separate dataset (tidyDataSummary) and saved as a CSV (tidyData.csv).
